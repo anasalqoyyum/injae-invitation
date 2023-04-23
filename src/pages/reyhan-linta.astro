@@ -1,0 +1,16 @@
+---
+import { Time } from '../templates/satin/components/Time'
+import { Bride } from '../templates/satin/components/Bride'
+import { Introduction } from '../templates/satin/components/Introduction'
+import SatinLayout from '../templates/satin/layouts/SatinLayout.astro'
+import { Akad } from '../templates/satin/components/Akad'
+import { Gallery } from '../templates/satin/components/Gallery'
+---
+
+<SatinLayout title="Reyhan - Linta | Injae Invitation">
+  <Introduction client:idle />
+  <Bride client:idle />
+  <Time client:load />
+  <Akad client:idle />
+  <Gallery client:idle />
+</SatinLayout>

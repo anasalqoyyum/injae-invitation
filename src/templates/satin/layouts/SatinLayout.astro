@@ -1,0 +1,57 @@
+---
+import '@fontsource/cormorant-garamond'
+import '@fontsource/cormorant-garamond/600.css'
+
+import '@fontsource/cormorant-sc'
+
+import '@fontsource/cormorant-upright'
+import '@fontsource/cormorant-upright/600.css'
+import '@fontsource/cormorant-upright/700.css'
+
+export interface Props {
+  title: string
+}
+
+// TODO: Improve SEO
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="satin-background">
+    <main class="satin-theme h-screen">
+      <slot />
+    </main>
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init()
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  .satin-background {
+    background-color: #f3f1eb;
+  }
+
+  .satin-theme {
+    font-family: 'Cormorant Garamond', sans-serif;
+  }
+
+  .satin-secondary {
+    font-family: 'Cormorant Upright', sans-serif;
+  }
+</style>
