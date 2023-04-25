@@ -8,8 +8,8 @@ export const Timeline = () => {
           <Heart className="h-3 w-3 fill-gray-100 stroke-slate-600" />
         </span>
         <div data-aos='fade-right' className="bg-white p-8 rounded-xl">
-          <h3 className="mb-1 flex items-center text-xl font-semibold text-satin-900">Awal Pertemuan</h3>
-          <p className="mb-4 text-lg font-normal">
+          <h3 className="mb-1 flex items-center text-lg md:text-xl font-semibold text-satin-900">Awal Pertemuan</h3>
+          <p className="mb-4 text-base md:text-lg font-normal">
             <span className="font-bold">2013</span> - 10 tahun lalu jadi rekan OSIS di MTsN, sering ketemu and finally he fell first.
             Akhirnya deket dan putus karena mau ujian.
           </p>
@@ -20,8 +20,8 @@ export const Timeline = () => {
           <Heart className="h-3 w-3 fill-gray-100 stroke-slate-600" />
         </span>
         <div data-aos='fade-right' className="bg-white p-8 rounded-xl">
-          <h3 className="mb-1 text-xl font-semibold text-satin-900">Boarding in Love</h3>
-          <p className="text-lg font-normal">
+          <h3 className="mb-1 text-lg md:text-xl font-semibold text-satin-900">Boarding in Love</h3>
+          <p className="text-base md:text-lg font-normal">
             <span className="font-bold">2015</span> - Ternyata lanjut di MAN yang sama dan tinggal di Boarding hampir 24/7 ketemu, putus
             nyambung lagi dan akhirnya di kelas 12 nyambung until now.
           </p>
@@ -32,8 +32,8 @@ export const Timeline = () => {
           <Heart className="h-3 w-3 fill-gray-100 stroke-slate-600" />
         </span>
         <div data-aos='fade-right' className="bg-white p-8 rounded-xl">
-          <h3 className="mb-1 text-xl font-semibold text-satin-900">Menjalin Hubungan</h3>
-          <p className="text-lg font-normal">
+          <h3 className="mb-1 text-lg md:text-xl font-semibold text-satin-900">Menjalin Hubungan</h3>
+          <p className="text-base md:text-lg font-normal">
             <span className="font-bold">2017</span> - Kuliah harus LDR Semarang - Jakarta, alhamdulillah masing-masing lulus dan kerja.
           </p>
         </div>
@@ -43,8 +43,8 @@ export const Timeline = () => {
           <Heart className="h-3 w-3 fill-gray-100 stroke-slate-600" />
         </span>
         <div data-aos='fade-right' className="bg-white p-8 rounded-xl">
-          <h3 className="mb-1 text-xl font-semibold text-satin-900">Hari Tunangan</h3>
-          <p className="text-lg font-normal">
+          <h3 className="mb-1 text-lg md:text-xl font-semibold text-satin-900">Hari Tunangan</h3>
+          <p className="text-base md:text-lg font-normal">
             <span className="font-bold">18 Desember 2022</span> - Alhamdulillah tunangan dan merencanakan pernikahan kami.
           </p>
         </div>

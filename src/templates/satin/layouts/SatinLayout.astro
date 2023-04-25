@@ -20,7 +20,7 @@ const { title } = Astro.props
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -43,6 +43,10 @@ const { title } = Astro.props
 </html>
 
 <style is:global>
+  /* * {
+    outline: 1px solid #f00 !important;
+  } */
+
   .satin-background {
     background-color: #f3f1eb;
   }

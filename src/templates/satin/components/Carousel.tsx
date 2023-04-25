@@ -1,6 +1,6 @@
 export const Carousel = ({ images }: { images: string[] }) => {
   return (
-    <div id="default-carousel" className="relative w-full rounded-xl border-8 border-satin-900" data-carousel="slide">
+    <div id="default-carousel" className="relative w-full rounded-xl border-4 md:border-8 border-satin-900" data-carousel="slide">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-[32rem]">
         {images.map((image, idx) => (
           <div key={idx + 'z'} className="hidden duration-700 ease-in-out" data-carousel-item>

@@ -3,7 +3,9 @@ export const Footer = () => {
 
   return (
     <section className="py-8">
-      <p className="text-center text-sm font-sans">Copyright Ⓒ Injae Invitation {date} <br /> Made with 💖 by Injae Invitation</p>
+      <p className="text-center font-sans text-[9px] md:text-sm">
+        Copyright Ⓒ Injae Invitation {date} <br /> Made with 💖 Injae Invitation
+      </p>
     </section>
   )
 }

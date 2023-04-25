@@ -15,16 +15,16 @@ export const Gallery = () => {
   ]
 
   return (
-    <section className="bg-[#E0DBCE]">
+    <section className="bg-[#E0DBCE] z-20">
       <Wave parentClassName="h-[64px] w-full" className="w-full fill-[#F3F1EB]" />
       <div className="container mx-auto pt-8 pb-36">
-        <p data-aos="zoom-in-up" className="satin-secondary pt-4 text-center text-[50px] font-semibold leading-none text-satin-900">
+        <p data-aos="zoom-in-up" className="satin-secondary pt-4 text-center text-4xl md:text-[50px] font-semibold leading-none text-satin-900">
           Galeri
         </p>
-        <div data-aos="zoom-in" className='mt-8 mx-80'>
+        <div data-aos="zoom-in" className='mt-8 mx-4 md:mx-80'>
           <Carousel images={images} />
         </div>
-        <div className='mt-16 mx-96'>
+        <div className='mt-16 mx-4 md:mx-96 z-30'>
           <Masonry />
         </div>
       </div>

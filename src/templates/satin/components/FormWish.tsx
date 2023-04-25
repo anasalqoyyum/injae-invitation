@@ -12,10 +12,10 @@ export const FormWish = () => {
       {/* <div className="pb-24"> */}
         <h1
           data-aos="fade-in"
-          className="satin-secondary flex flex-row items-center justify-center gap-4 pt-8 pb-4 text-center text-4xl font-semibold text-satin-900 before:block before:w-12 before:border-t-2  before:border-b-0 before:border-t-[#A87000] after:block after:w-12 after:border-b-0 after:border-t-2 after:border-t-[#A87000]">
+          className="satin-secondary flex flex-row items-center justify-center gap-4 pt-8 pb-4 text-center text-3xl md:text-4xl font-semibold text-satin-900 before:block before:w-12 before:border-t-2  before:border-b-0 before:border-t-[#A87000] after:block after:w-12 after:border-b-0 after:border-t-2 after:border-t-[#A87000]">
           Reyhan & Linta
         </h1>
-        <p className="text-center text-sm italic">See You on Our Lovely Day</p>
+        <p className="text-center text-sm italic pb-8">See You on Our Lovely Day</p>
       {/* </div> */}
       <Wave parentClassName="h-[64px] w-full rotate-180" className="w-full fill-[#F3F1EB]" />
     </section>

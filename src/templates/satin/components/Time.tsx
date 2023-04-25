@@ -4,10 +4,11 @@ export const Time = () => {
   const TARGET_TIME = new Date('May 6, 2023').getTime()
 
   return (
-    <section className='z-10'>
-      <div className="container mx-auto pt-4 pb-20">
+    <section className="z-10">
+      <div className="container relative mx-auto pt-4 pb-20">
+        <div className="absolute inset-0 block bg-[url('/satin/assets/leaf-3.png')] bg-cover opacity-20 md:hidden" />
         <CountdownTimer targetDate={TARGET_TIME} />
-        <div className="flex justify-center">
+        <div data-aos="zoom-in-up" className="flex justify-center">
           <a
             href="https://www.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+%3A+Reyhan+dan+Linta&details=Lokasi%3A+RDM+Garage%0Ahttps%3A%2F%2Fmaps.app.goo.gl%2Fr9mqkDmCr869S8Cg8%0A%0ASomosari+02%2F02+Batealit+Jepara&location=RDM+Garage%2C+Unnamed+Road%2C+9Q7V%2BW8X%2C+Somosari+III%2C+Somosari%2C+Batealit%2C+Jepara+Regency%2C+Central+Java+59461%2C+Indonesia&dates=20230506T060000Z%2F20230506T110000Z"
             role="button"
@@ -17,7 +18,7 @@ export const Time = () => {
             Save The Date
           </a>
         </div>
-        <p className="mx-24 mt-4 text-center text-lg italic">
+        <p className="mx-4 mt-4 text-center text-lg italic md:mx-24">
           “Dan di antara tanda-tanda (kebesaran)-Nya adalah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
           cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."{' '}
           <span className="font-bold">Ar-Ruum : 21</span>

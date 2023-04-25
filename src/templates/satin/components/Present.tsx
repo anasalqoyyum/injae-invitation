@@ -24,14 +24,14 @@ export const Present = () => {
 
   return (
     <>
-      <section className="z-10">
+      <section data-aos="zoom-in-up" className="z-10">
         <div className="container mx-auto pt-16 pb-16">
-          <div className="mx-52 flex flex-row justify-center">
+          <div className="mx-4 md:mx-52 flex flex-row justify-center">
             <div className="relative flex flex-row gap-2 rounded-xl bg-[#F3F1EB] shadow-satin-xl">
               <div className="absolute inset-0 rotate-180 bg-[url('/satin/assets/leaf-3.png')] bg-cover opacity-20 blur-sm" />
               <div className="z-10 flex flex-col items-center py-8 px-12 text-center">
-                <p className="satin-secondary mb-1 pt-4 text-center text-5xl font-semibold text-satin-900">Kirim Hadiah</p>
-                <p className="mt-8 text-lg">
+                <p className="satin-secondary mb-1 pt-4 text-center text-4xl md:text-5xl font-semibold text-satin-900">Kirim Hadiah</p>
+                <p className="mt-8 text-base md:text-lg">
                   Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih Anda, Anda
                   dapat memberi kado secara cashless
                 </p>
@@ -72,20 +72,20 @@ export const Present = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95">
                 <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title as="h6" className="satin-secondary mt-4 text-center text-4xl font-semibold leading-6 text-satin-900">
+                  <Dialog.Title as="h6" className="satin-secondary mt-4 text-center text-2xl md:text-4xl font-semibold leading-6 text-satin-900">
                     Kirim Hadiah Anda
                   </Dialog.Title>
-                  <p className="satin-theme mt-2 text-center">
+                  <p className="satin-theme mt-2 text-sm md:text-base text-center">
                     Silahkan kirim hadiah melalui nomor rekening maupun dompet digital berikut :
                   </p>
-                  <div className="mt-6 flex flex-row justify-center gap-12">
+                  <div className="mt-6 flex flex-col md:flex-row justify-center gap-12">
                     <div className="flex flex-col items-center text-center">
                       <img src={bri} />
                       <button
                         type="button"
                         className={clsx(
                           { 'animate-wiggle': effect },
-                          'mt-4 inline-flex justify-center rounded-md border border-transparent bg-[#3F3C38] px-2 py-2 text-sm font-medium text-white hover:bg-[#3F3C38]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3F3C38]/50 focus-visible:ring-offset-2'
+                          'mt-4 inline-flex justify-center rounded-md border border-transparent bg-[#3F3C38] px-2 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#3F3C38]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3F3C38]/50 focus-visible:ring-offset-2'
                         )}
                         onClick={() => {
                           copyToClipboard('002201015126532')
@@ -101,7 +101,7 @@ export const Present = () => {
                         type="button"
                         className={clsx(
                           { 'animate-wiggle': effect2nd },
-                          'mt-4 inline-flex justify-center rounded-md border border-transparent bg-[#3F3C38] px-2 py-2 text-sm font-medium text-white hover:bg-[#3F3C38]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3F3C38]/50 focus-visible:ring-offset-2'
+                          'mt-4 inline-flex justify-center rounded-md border border-transparent bg-[#3F3C38] px-2 py-2 text-xs md:text-sm font-medium text-white hover:bg-[#3F3C38]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3F3C38]/50 focus-visible:ring-offset-2'
                         )}
                         onClick={() => {
                           copyToClipboard('083154538971')

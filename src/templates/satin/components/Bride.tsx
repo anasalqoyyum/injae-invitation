@@ -4,15 +4,15 @@ import { Instagram } from 'react-feather'
 
 export const Bride = () => {
   return (
-    <section className='z-10'>
-      <div className="absolute h-[48rem] w-full">
-        <div className="absolute top-0 left-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-3.png')] bg-[length:80%_auto] bg-center bg-no-repeat opacity-20" />
+    <section className="z-10">
+      <div className="absolute h-[64rem] md:h-[48rem] w-full">
+        <div className="absolute top-0 left-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-3.png')] bg-[length:100%_auto] md:bg-[length:80%_auto] bg-center bg-no-repeat opacity-20" />
       </div>
       <div className="container mx-auto pt-16 pb-16">
-        <div className="mx-52 flex flex-row justify-center">
-          <div className="flex flex-row gap-2 rounded-xl bg-[#F3F1EB] z-10 p-12 shadow-satin-xl">
+        <div className="mx-12 flex flex-row justify-center md:mx-52">
+          <div className="z-10 flex flex-col gap-2 rounded-xl bg-[#F3F1EB] p-0 shadow-satin-xl md:flex-row md:p-12">
             <div className="flex flex-col items-center py-8 px-12 text-center">
-              <img className="max-w-[50%]" src={male} />
+              <img className="max-w-full md:max-w-[50%]" src={male} />
               {/* TODO: Replace-able */}
               <p className="satin-secondary mb-1 pt-4 text-center text-4xl font-bold italic text-satin-900">Reyhan</p>
               <p>Muhammad Reyhan Jawadi</p>
@@ -28,8 +28,9 @@ export const Bride = () => {
                 <Instagram size={15} /> Instagram
               </a>
             </div>
+            <div className="satin-secondary block text-center text-4xl font-semibold text-satin-900 md:hidden">&</div>
             <div className="flex flex-col items-center py-8 px-12 text-center">
-              <img className="max-w-[50%]" src={female} />
+              <img className="max-w-full md:max-w-[50%]" src={female} />
               {/* TODO: Replace-able */}
               <p className="satin-secondary mb-1 pt-4 text-center text-4xl font-bold italic text-satin-900">Linta</p>
               <p>Linta Ainil Ulya</p>
