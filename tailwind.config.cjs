@@ -9,6 +9,15 @@ module.exports = {
       },
       boxShadow: {
         'satin-xl': '0px 10px 50px -5px rgba(0, 0, 0, 0.26)'
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-5deg)" },
+          "50%": { transform: "rotate(5deg)" }
+        }
+      },
+      animation: {
+        wiggle: "wiggle 500ms ease-in-out"
       }
     }
   },

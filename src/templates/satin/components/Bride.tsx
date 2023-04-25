@@ -4,10 +4,13 @@ import { Instagram } from 'react-feather'
 
 export const Bride = () => {
   return (
-    <section>
+    <section className='z-10'>
+      <div className="absolute h-[48rem] w-full">
+        <div className="absolute top-0 left-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-3.png')] bg-[length:80%_auto] bg-center bg-no-repeat opacity-20" />
+      </div>
       <div className="container mx-auto pt-16 pb-16">
         <div className="mx-52 flex flex-row justify-center">
-          <div className="flex flex-row gap-2 rounded-xl bg-[#F3F1EB] p-12 shadow-satin-xl">
+          <div className="flex flex-row gap-2 rounded-xl bg-[#F3F1EB] z-10 p-12 shadow-satin-xl">
             <div className="flex flex-col items-center py-8 px-12 text-center">
               <img className="max-w-[50%]" src={male} />
               {/* TODO: Replace-able */}

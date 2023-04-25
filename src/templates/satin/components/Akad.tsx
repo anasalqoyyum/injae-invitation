@@ -1,6 +1,6 @@
 export const Akad = () => {
   return (
-    <section>
+    <section className="z-10">
       <div className="container mx-auto pt-4 pb-20">
         <div className="mx-52 flex flex-row justify-around">
           <div className="text-center">

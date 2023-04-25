@@ -4,7 +4,7 @@ export const Time = () => {
   const TARGET_TIME = new Date('May 6, 2023').getTime()
 
   return (
-    <section>
+    <section className='z-10'>
       <div className="container mx-auto pt-4 pb-20">
         <CountdownTimer targetDate={TARGET_TIME} />
         <div className="flex justify-center">

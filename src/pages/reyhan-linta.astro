@@ -5,12 +5,21 @@ import { Introduction } from '../templates/satin/components/Introduction'
 import SatinLayout from '../templates/satin/layouts/SatinLayout.astro'
 import { Akad } from '../templates/satin/components/Akad'
 import { Gallery } from '../templates/satin/components/Gallery'
+import { LoveStory } from '../templates/satin/components/LoveStory'
+import { Present } from '../templates/satin/components/Present'
+import { FormWish } from '../templates/satin/components/FormWish'
+import { Footer } from '../templates/satin/components/Footer'
 ---
 
 <SatinLayout title="Reyhan - Linta | Injae Invitation">
-  <Introduction client:idle />
+  <div class="fixed top-0 left-0 h-full w-full bg-[url('/satin/assets/leaf-4.png')] bg-[length:50%_auto] bg-top bg-no-repeat opacity-10" />
+  <Introduction client:only />
   <Bride client:idle />
   <Time client:load />
   <Akad client:idle />
   <Gallery client:idle />
+  <LoveStory client:idle />
+  <Present client:idle />
+  <FormWish client:idle />
+  <Footer client:idle />
 </SatinLayout>
