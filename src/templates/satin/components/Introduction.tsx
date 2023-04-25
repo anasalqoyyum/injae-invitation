@@ -10,6 +10,7 @@ export const Introduction = () => {
   const [play, { stop }] = useSound(john)
   const search = new URLSearchParams(window.location.search)
   const { to } = Object.fromEntries(search.entries())
+  const name = to.replaceAll('-', ' ')
 
   function closeModal() {
     setIsOpen(false)
@@ -84,7 +85,7 @@ export const Introduction = () => {
                     </div>
                     <div className="mt-24 mb-4 flex flex-col items-center justify-center">
                       <img className="mb-4 w-1/4" src={guest} />
-                      <p className="text-center text-xl leading-none text-satin-100">Dear, {to || 'Guest'}</p>
+                      <p className="text-center text-xl leading-none text-satin-100">Dear, {name || 'Guest'}</p>
                       <p className="text-md mt-2 text-center leading-none text-satin-100">you're invited to our wedding ceremony</p>
                     </div>
                     <div className="mt-8 flex animate-pulse justify-center">
