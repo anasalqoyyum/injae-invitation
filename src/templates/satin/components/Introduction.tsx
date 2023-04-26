@@ -1,21 +1,34 @@
 import { Wave } from '../assets/Wave'
 import guest from '../assets/guest.png?url'
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import john from '../assets/john-mayer.mp3'
-import useSound from 'use-sound'
+import { useSound } from '../../../hooks/useSound'
 
 export const Introduction = () => {
   const [isOpen, setIsOpen] = useState(true)
-  const [play, { stop }] = useSound(john)
+  const [notPlayed, setNotPlayed] = useState(false)
+  // const [play, { stop }] = useSound(john)
   const search = new URLSearchParams(window.location.search)
   const { to } = Object.fromEntries(search.entries())
-  const name = to.replaceAll('-', ' ')
+  const name = to ? to.replaceAll('-', ' ') : 'Guest'
+  const { isReady, play, currentAudio } = useSound(john)
 
   function closeModal() {
     setIsOpen(false)
-    play()
+
+    if (isReady) {
+      play()
+    } else {
+      setNotPlayed(true)
+    }
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      play()
+    }, 1000)
+  }, [notPlayed])
 
   return (
     <>
@@ -66,7 +79,7 @@ export const Introduction = () => {
             <div className="flex min-h-full justify-center text-center">
               <Transition.Child as={Fragment} leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
                 <Dialog.Panel className="satin-theme flex h-screen w-full max-w-full transform flex-col items-center justify-center bg-[#E0DBCE] p-6 text-left align-middle shadow-xl transition-all">
-                  <div className="absolute top-0 left-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-1.png')] bg-[length:60%_auto] md:bg-[length:20%_auto] bg-right-bottom bg-no-repeat" />
+                  <div className="absolute top-0 left-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-1.png')] bg-[length:60%_auto] bg-right-bottom bg-no-repeat md:bg-[length:20%_auto]" />
                   <div className="relative z-20">
                     <p className="pt-8 text-center text-lg font-semibold leading-none tracking-[4px] text-satin-100 md:text-lg">
                       The Wedding of
@@ -85,7 +98,7 @@ export const Introduction = () => {
                     </div>
                     <div className="mt-24 mb-4 flex flex-col items-center justify-center">
                       <img className="mb-4 w-1/4" src={guest} />
-                      <p className="text-center text-xl leading-none text-satin-100">Dear, {name || 'Guest'}</p>
+                      <p className="text-center text-xl leading-none text-satin-100">Dear, {name}</p>
                       <p className="text-md mt-2 text-center leading-none text-satin-100">you're invited to our wedding ceremony</p>
                     </div>
                     <div className="mt-8 flex animate-pulse justify-center">
@@ -97,7 +110,7 @@ export const Introduction = () => {
                       </button>
                     </div>
                   </div>
-                  <div className="absolute bottom-0 right-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-2.png')] bg-[length:45%_auto] md:bg-[length:20%_auto] bg-left-top bg-no-repeat" />
+                  <div className="absolute bottom-0 right-0 h-full w-full rotate-180 bg-[url('/satin/assets/leaf-2.png')] bg-[length:45%_auto] bg-left-top bg-no-repeat md:bg-[length:20%_auto]" />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
